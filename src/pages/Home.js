@@ -9,7 +9,7 @@ const Home = () => {
 
   if (isLoading) {
     return (
-      <h1 className='font-extrabold'>LOADING....</h1>
+      <h1 className='font-bold text-lg'>LOADING....</h1>
     )
   }
 

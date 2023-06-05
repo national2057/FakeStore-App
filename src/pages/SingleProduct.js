@@ -5,10 +5,10 @@ import { useParams } from 'react-router-dom'
 const SingleProduct = () => {
 
   const { id } = useParams()
-  const { isError, isLoading, data } = useGetSingleProductQuery(id)
+  const { isLoading, data } = useGetSingleProductQuery(id)
 
   if (isLoading) {
-    <h1>LOADING....</h1>
+    <h1 className='font-bold text-lg'>LOADING....</h1>
   }
 
   return (

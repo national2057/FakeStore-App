@@ -7,7 +7,7 @@ export const fakeStoreApi = createApi({
   endpoints: (builder) => ({
 
     getAllProduct: (builder.query)({
-      query: (query) => ({
+      query: () => ({
         url: "/products",
       })
     }),
@@ -20,7 +20,7 @@ export const fakeStoreApi = createApi({
 
     getProductByCategory: (builder.query)({
       query: (query) => ({
-        url: "/categories",
+        url: `/products/category/${query}`,
       })
     }),
 

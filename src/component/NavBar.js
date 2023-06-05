@@ -28,8 +28,8 @@ const NavBar = () => {
               <ul className="absolute z-50 opacity-0 pointer-events-none transition duration-300 ease-in-out group-hover:opacity-100 group-hover:pointer-events-auto w-max bg-slate-600 left-1">
                 <li> <NavLink to='/cate/jewelery' className='hover:bg-pink-500 px-3'>Jewelery</NavLink></li>
                 <li> <NavLink to='/cate/electronics' className='hover:bg-pink-500 px-3'>Electronics</NavLink></li>
-                <li>  <NavLink to="/cate/men's-clothing" className="hover:bg-pink-500 px-3">Men's Clothing</NavLink></li>
-                <li><NavLink to="/cate/women's-clothing" className='hover:bg-pink-500 px-3'>Women's Clothing</NavLink></li>
+                <li>  <NavLink to="/cate/men's clothing" className="hover:bg-pink-500 px-3">Men's Clothing</NavLink></li>
+                <li><NavLink to="/cate/women's clothing" className='hover:bg-pink-500 px-3'>Women's Clothing</NavLink></li>
               </ul>
             </li>
 
