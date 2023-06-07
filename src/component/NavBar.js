@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaChevronDown, FaShoppingBag, FaTimes } from 'react-icons/fa'
 
 const NavBar = () => {
 
@@ -9,10 +9,10 @@ const NavBar = () => {
 
   return (
     <>
-      <div className='flex justify-between items-center px-20 py-4 bg-orange-400 text-black space-y-4 sticky top-0 z-10'>
+      <div className='flex justify-between items-center px-10 py-4 bg-[#C17B42] text-black sticky top-0 z-10'>
         <div className='font-bold text-xl flex justify-evenly space-x-5'>
-          <h1>NF</h1>
-          <ul className='flex justify-center items-center space-x-5 text-lg'>
+          <h1 className='font-semibold text-2xl'>NF</h1>
+          <ul className='flex justify-center items-center space-x-5 text-lg pl-24'>
             <li><NavLink to='/'>Dashboard</NavLink></li>
           </ul>
         </div>
@@ -24,7 +24,7 @@ const NavBar = () => {
 
           <ul className='hidden md:flex justify-evenly space-x-5 text-lg font-semibold'>
             <li className="relative group">
-              <NavLink>Category</NavLink>
+              <NavLink className='flex gap-1 pr-2'>Category <FaChevronDown className='pt-2' size={24} /> </NavLink>
               <ul className="absolute z-50 opacity-0 pointer-events-none transition duration-300 ease-in-out group-hover:opacity-100 group-hover:pointer-events-auto w-max bg-slate-600 left-1">
                 <li> <NavLink to='/cate/jewelery' className='hover:bg-pink-500 px-3'>Jewelery</NavLink></li>
                 <li> <NavLink to='/cate/electronics' className='hover:bg-pink-500 px-3'>Electronics</NavLink></li>

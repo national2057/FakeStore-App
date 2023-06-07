@@ -15,7 +15,7 @@ const SingleProduct = () => {
     <div>
       {data && (
         <div key={data.id} className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <img src={data.image} alt="" className="h-[540px] ml-[175px] rounded-md mt-[50px] shadow-2xl hover:scale-105 transition-transform duration-300 cursor-pointer" />
+          <img src={data.image} alt="" className="h-[540px] w-[500px] ml-[175px] rounded-md mt-[50px] shadow-2xl hover:scale-105 transition-transform duration-300 cursor-pointer" />
 
           <div className="p-5 mr-[110px] mt-10 border border-gray-300 rounded-lg shadow-lg bg-slate-300">
             <h1 className="text-2xl font-bold mb-4">{data.title}</h1>
