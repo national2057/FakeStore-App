@@ -19,7 +19,7 @@ const Home = () => {
         {data && data?.map((items) => {
           return (
             <div onClick={() => nav(`single/${items.id}`)} key={items.id} className='hover:scale-105 ease-in-out duration-[375ms] shadow-lg cursor-pointer p-3 bg-zinc-200 rounded-md'>
-              <img src={items.image} alt="" className='h-[350px]' />
+              <img src={items.image} alt="" className='h-[350px] mb-3' />
               <h1>{items.title}</h1>
             </div>
           )

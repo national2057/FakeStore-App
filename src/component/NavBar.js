@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaBars, FaChevronDown, FaShoppingBag, FaTimes } from 'react-icons/fa'
+import { TiShoppingCart } from "react-icons/ti";
 
 const NavBar = () => {
 
@@ -11,7 +12,10 @@ const NavBar = () => {
     <>
       <div className='flex justify-between items-center px-10 py-4 bg-[#C17B42] text-black sticky top-0 z-10'>
         <div className='font-bold text-xl flex justify-evenly space-x-5'>
-          <h1 className='font-semibold text-2xl'>NF</h1>
+          <div>
+            <p className='ml-1.5'> <FaShoppingBag /> </p>
+            <h1 className=' font-semibold text-2xl'>NF </h1>
+          </div>
           <ul className='flex justify-center items-center space-x-5 text-lg pl-24'>
             <li><NavLink to='/'>Dashboard</NavLink></li>
           </ul>
@@ -22,7 +26,7 @@ const NavBar = () => {
 
           {/* MENU */}
 
-          <ul className='hidden md:flex justify-evenly space-x-5 text-lg font-semibold'>
+          <ul className='hidden md:flex justify-evenly space-x-4 text-lg font-semibold'>
             <li className="relative group">
               <NavLink className='flex gap-1 pr-2'>Category <FaChevronDown className='pt-2' size={24} /> </NavLink>
               <ul className="absolute z-50 opacity-0 pointer-events-none transition duration-300 ease-in-out group-hover:opacity-100 group-hover:pointer-events-auto w-max bg-slate-600 left-1">
@@ -31,6 +35,10 @@ const NavBar = () => {
                 <li>  <NavLink to="/cate/men's clothing" className="hover:bg-pink-500 px-3">Men's Clothing</NavLink></li>
                 <li><NavLink to="/cate/women's clothing" className='hover:bg-pink-500 px-3'>Women's Clothing</NavLink></li>
               </ul>
+            </li>
+
+            <li>
+              <NavLink> <TiShoppingCart size={30} /> </NavLink>
             </li>
 
             <li><NavLink to='/'>Login</NavLink></li>
