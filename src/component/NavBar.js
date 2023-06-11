@@ -13,8 +13,8 @@ const NavBar = () => {
       <div className='flex justify-between items-center px-10 py-4 bg-[#C17B42] text-black sticky top-0 z-10'>
         <div className='font-bold text-xl flex justify-evenly space-x-5'>
           <div>
-            <p className='ml-1.5'> <FaShoppingBag /> </p>
-            <h1 className=' font-semibold text-2xl'>NF </h1>
+            <p className='ml-4'> <FaShoppingBag /> </p>
+            <h1 className=' font-semibold text-2xl'>NFW</h1>
           </div>
           <ul className='flex justify-center items-center space-x-5 text-lg pl-24'>
             <li><NavLink to='/'>Dashboard</NavLink></li>
